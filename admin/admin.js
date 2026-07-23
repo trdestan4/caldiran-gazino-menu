@@ -67,7 +67,9 @@ form.addEventListener("submit", async function (e) {
   const id = editIdInput.value;
   const name = nameInput.value.trim();
   const category = categoryInput.value;
-  const price = priceInput.value.trim();
+  const price = Number(
+    document.getElementById("productPrice").value.replace(",", ".")
+);
   const file = imageFileInput.files[0];
 
   if (!name || !category || !price) {
