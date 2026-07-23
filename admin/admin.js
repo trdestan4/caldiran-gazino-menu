@@ -92,7 +92,7 @@ form.addEventListener("submit", async function (e) {
     const productData = {
       name: name,
       category: category,
-      price: Number and ,(price),
+      price: Number(price),
       image: imageUrl
     };
 
@@ -272,7 +272,7 @@ function getCategoryName(category) {
     sicak: "Sıcak İçecekler",
     soguk: "Soğuk İçecekler",
     tatli: "Tatlılar",
-    fastfood: "Fast Food",
+    yiyecek: "Yiyecekler"
   };
 
   return categories[category] || category;
