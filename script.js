@@ -2,7 +2,12 @@ const menuData = {
   sicak: [],
   soguk: [],
   tatli: [],
-  yiyecek: []
+  fastfood: [],
+  pideveizgara: [],
+  dondurma: [],
+  omlet: [],
+  pastane: [],
+  salata: []
 };
 
 async function loadMenuProducts() {
@@ -18,7 +23,13 @@ async function loadMenuProducts() {
       renderProducts("sicak");
       renderProducts("soguk");
       renderProducts("tatli");
-      renderProducts("yiyecek");
+      renderProducts("fastfood");
+      renderProducts("pideveizgara");
+      renderProducts("dondurma");
+      renderProducts("omlet");
+      renderProducts("pastane");
+      renderProducts("fastfood");
+      renderProducts("salata");
       return;
     }
 
@@ -31,7 +42,14 @@ async function loadMenuProducts() {
     renderProducts("sicak");
     renderProducts("soguk");
     renderProducts("tatli");
-    renderProducts("yiyecek");
+    renderProducts("fastfood");
+    renderProducts("pideveizgara");
+    renderProducts("dondurma");
+    renderProducts("omlet");
+    renderProducts("pastane");
+    renderProducts("fastfood");
+    renderProducts("salata");
+    
 
   } catch (error) {
     alert("Menü yüklenirken hata oluştu: " + error.message);
