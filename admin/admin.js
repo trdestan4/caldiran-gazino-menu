@@ -92,7 +92,7 @@ form.addEventListener("submit", async function (e) {
     const productData = {
       name: name,
       category: category,
-      price: Number(price),
+      price: Number and ,(price),
       image: imageUrl
     };
 
