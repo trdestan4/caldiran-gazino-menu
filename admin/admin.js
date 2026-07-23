@@ -273,12 +273,6 @@ function getCategoryName(category) {
     soguk: "Soğuk İçecekler",
     tatli: "Tatlılar",
     fastfood: "Fast Food",
-    pideveizgara: "Pide ve Izgara",
-    dondurma: "Dondurma",
-    omlet: "Omlet Çeşitleri",
-    pastane: "Pastane",
-    salata: "Salata Çeşitleri"
-    
   };
 
   return categories[category] || category;
