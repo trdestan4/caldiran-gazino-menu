@@ -278,6 +278,7 @@ function getCategoryName(category) {
     omlet: "Omlet Çeşitleri",
     pastane: "Pastane",
     salata: "Salata Çeşitleri"
+    
   };
 
   return categories[category] || category;
