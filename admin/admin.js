@@ -67,7 +67,7 @@ form.addEventListener("submit", async function (e) {
   const id = editIdInput.value;
   const name = nameInput.value.trim();
   const category = categoryInput.value;
-  const price = priceInput.value.trim();
+  const price = priceInput.value.trim().replace(",", ".");
   const file = imageFileInput.files[0];
 
   if (!name || !category || !price) {
@@ -179,7 +179,7 @@ async function loadProducts() {
           <div class="admin-product-info">
             <h3>${product.name}</h3>
             <p>${getCategoryName(product.category)}</p>
-            <p>${product.price} ₺</p>
+            <p>${Number(product.price).toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ₺</p>
           </div>
 
           <div class="admin-actions">
