@@ -67,7 +67,7 @@ function createCard(product) {
 
       <div class="card-body">
         <h3>${product.name}</h3>
-        <p class="price">${product.price} ₺</p>
+        <p class="price">${Number(product.price).toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ₺</p>
       </div>
     </div>
   `;
